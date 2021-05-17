@@ -16,11 +16,10 @@ public class AgreementController {
     public AgreementController(AgreementService agreementService) {
         this.agreementService = agreementService;
     }
-
+    // The resource is handled by a service called AgreementService
     @CrossOrigin(origins = {"http://localhost:3000", "https://cal-pwa-firebase.web.app", "https://cal-pwa-firebase.firebaseapp.com"})
     @PostMapping("/agreement")
     public AgreementResult newPost(@RequestBody AgreementSubmit postData) throws SQLException {
-
         return agreementService.newPost(postData);
     }
 }

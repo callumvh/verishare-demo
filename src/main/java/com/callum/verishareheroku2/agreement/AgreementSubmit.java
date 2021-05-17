@@ -7,7 +7,9 @@ import java.time.LocalDate;
 @Entity
 @Table
 
-
+// This class represents the table in the database because of the @Table anotation, it contains three constructors, accessors and a toString method.
+// Each record of the database represents a basic user, with a name, initial amount which interest will be calculated on, an agreement type, the start and end dates, the calculated amount from the stored procedure and the days between the two 
+// dates which the stored procedure also calculates.
 public class AgreementSubmit {
     @Id
     @SequenceGenerator(

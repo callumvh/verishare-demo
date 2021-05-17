@@ -1,5 +1,6 @@
 package com.callum.verishareheroku2.agreement;
 
+// This class represents the object which is to be returned back to the client, it contains three variables
 public class AgreementResult {
     private final int successOrNot;
     private final String reasonIfUnsuccessful;

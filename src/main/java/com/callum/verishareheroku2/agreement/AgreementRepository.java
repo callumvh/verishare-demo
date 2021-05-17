@@ -7,9 +7,8 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.Date;
 
-
 @Repository
-
+// This is the interface to the raw SQL which calls the stored procedure.
 public interface AgreementRepository
         extends JpaRepository<AgreementSubmit, Long> {
 
@@ -19,5 +18,4 @@ public interface AgreementRepository
             @Param("agreementType") String agreementType,
             @Param("startDate") Date startDate,
             @Param("endDate") Date endDate);
-
 }
