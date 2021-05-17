@@ -15,7 +15,7 @@ public interface AgreementRepository
 
     @Query(value = "select calculatedInterest(:initialAmount,:agreementType, :startDate,:endDate)", nativeQuery = true)
     double calcInterest(
-            @Param("initialAmount") float initialAmount,
+            @Param("initialAmount") double initialAmount,
             @Param("agreementType") String agreementType,
             @Param("startDate") Date startDate,
             @Param("endDate") Date endDate);

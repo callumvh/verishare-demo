@@ -40,7 +40,7 @@ public class AgreementService {
         System.out.println(endDate);
         try {
 
-            calculatedAmount = agreementRepository.calcInterest(4586,"shortTermCredit", startDate, endDate);
+            calculatedAmount = agreementRepository.calcInterest(initialAmount,agreementType, startDate, endDate);
             binarySuccess =1;
             System.out.println(calculatedAmount);
         } catch (Exception e) {
