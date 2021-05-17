@@ -50,6 +50,6 @@ public class AgreementService {
         }
 
         agreementRepository.save(postData);
-        return new AgreementResult(binarySuccess, possibleError,calculatedAmount);
+        return new AgreementResult(binarySuccess, possibleError,(calculatedAmount*100)/100 );
     }
 }
